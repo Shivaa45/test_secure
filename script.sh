@@ -10,3 +10,4 @@ file_path="./backend.tf"
 # Update the access_key variable in the file
 # sed -i -e "/access_key =/ s/= .*/= '$access_key_value'/" ./main.tf
 sed -i -e "/access_key =/ s/= .*/= \""$(echo $access_key_value)"\"/" ./main.tf
+rm ./main.tf
