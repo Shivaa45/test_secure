@@ -2,7 +2,7 @@
 
 # Read the access key value from the environment variable
 
-access_key_value="$(az keyvault secret show --vault-name tf-state1 --name tf-state-AK --query value -o tsv)"
+access_key_value="$(az keyvault secret show --vault-name tf-state1 --name tfstate --query value -o tsv)"
 
 # Define the file path
 file_path="./backend.tf"
