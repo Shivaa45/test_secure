@@ -10,7 +10,7 @@ terraform {
         storage_account_name = "shivammaurya286"
         container_name       = "tfstate1"
         key                  = "terraform.tfstate"
-        access_key = ""
+        access_key           = "${access_key_output}"
     }
 
 }
